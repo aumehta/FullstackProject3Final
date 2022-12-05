@@ -11,7 +11,7 @@ app.use(cors());
 const posts = require('./routes/api/posts'); 
 
 app.use('/api/posts', posts); 
-const port = process.env.PORT || 5003; 
+const port = process.env.PORT || 80; 
 
 //Handle Production 
 
