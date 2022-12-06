@@ -30,8 +30,10 @@ router.delete('/:id', async(req, res) =>{
 });
 async function loadPostsCollection(){
     const client = await mongodb.MongoClient.connect
-    ('mongodb+srv://abc123:Soccerqueen*14@cluster0.dobdnta.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true
-}); 
+    // ('mongodb+srv://abc123:Soccerqueen*14@cluster0.dobdnta.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true}); 
+    ('mongodb+srv://abc123:Soccerqueen*14@cluster0.gx3wfwh.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true}); 
+
+
 return client.db('Cluster0').collection('posts'); 
 }
 module.exports = router; 
